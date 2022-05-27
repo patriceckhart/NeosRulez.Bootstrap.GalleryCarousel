@@ -1,0 +1,10 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        NeosRulez.Bootstrap.GalleryCarousel: true
+    userInterface:
+      translation:
+        autoInclude:
+          NeosRulez.Bootstrap.GalleryCarousel:
+            - 'NodeTypes/Content/*'

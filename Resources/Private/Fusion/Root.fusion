@@ -1,0 +1,30 @@
+prototype(NeosRulez.Bootstrap:Content.Gallery) {
+
+    @context.isSlicked = ${q(node).property('isSlicked')}
+
+    @context.slickedGallery = NeosRulez.SlickCarousel:Component.SlickCarousel {
+
+        assets = ${q(node).property('assets')}
+        allowCropping = ${q(node).property('noCropping')}
+
+        renderer >
+        renderer = afx`
+            <NeosRulez.Bootstrap:Component.AbstractContent>
+                <code @if.render={!props.assets && props.inBackend} >
+                    {I18n.translate('NeosRulez.Bootstrap:NodeTypes.Content.Gallery:content.emptyAssetList')}
+                </code>
+                <div @if.render={props.assets} id={props.identifier} class={'gallery-slider'} >
+                    <div class="neos-contentcollection">
+                        <Neos.Fusion:Loop items={props.assets} >
+                            <div class={'gallery-slider-item'} >
+                                <NeosRulez.Bootstrap:Component.ImageTag image={item} width="300" height="300" allowCropping={props.allowCropping} allowUpScaling={true} async="true" />
+                            </div>
+                        </Neos.Fusion:Loop>
+                    </div>
+                </div>
+                <NeosRulez.SlickCarousel:Component.SlickCarousel.ScriptTag identifier={props.identifier} slide=".gallery-slider-item" />
+            </NeosRulez.Bootstrap:Component.AbstractContent>
+        `
+    }
+    renderer.@process.slickedGallery = ${isSlicked ? slickedGallery : value}
+}

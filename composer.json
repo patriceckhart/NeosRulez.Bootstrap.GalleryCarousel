@@ -1,0 +1,20 @@
+{
+  "description": "A carousel extension for the NeosRulez.Bootstrap Gallery NodeType.",
+  "type": "neos-package",
+  "name": "neosrulez/bootstrap-gallerycarousel",
+  "require": {
+    "neosrulez/bootstrap": "^5.0",
+    "neosrulez/slickcarousel": "^3.0",
+    "neos/nodetypes": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "NeosRulez\\Bootstrap\\GalleryCarousel\\": "Classes/"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "NeosRulez.Bootstrap.GalleryCarousel"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+'NeosRulez.Bootstrap:Content.Gallery':
+  superTypes:
+    'NeosRulez.SlickCarousel:Mixin.SlickOptions': true
+  ui:
+    inspector:
+      groups:
+        slickCarousel:
+          label: NeosRulez.SlickCarousel:NodeTypes.Component.SlickCarousel:ui.label
+          icon: far fa-images
+  properties:
+    isSlicked:
+      type: boolean
+      ui:
+        label: NeosRulez.Bootstrap.GalleryCarousel:NodeTypes.Content.Gallery:properties.isSlicked
+        reloadPageIfChanged: true
+        inspector:
+          group: slickCarousel
+          position: start
+    lightbox:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? true : false'
+    columns:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? true : false'
+    noGutters:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? true : false'
