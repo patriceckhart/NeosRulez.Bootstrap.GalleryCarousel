@@ -28,3 +28,39 @@
       ui:
         inspector:
           hidden: 'ClientEval:node.properties.isSlicked ? true : false'
+    showarrows:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? false : true'
+    showdots:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? false : true'
+    autoplay:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? false : true'
+    fade:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? false : true'
+    speed:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? false : true'
+    autoplaySpeed:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? false : true'
+    infinite:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? false : true'
+    slidesToShow:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? false : true'
+    slidesToScroll:
+      ui:
+        inspector:
+          hidden: 'ClientEval:node.properties.isSlicked ? false : true'

@@ -17,7 +17,7 @@ prototype(NeosRulez.Bootstrap:Content.Gallery) {
                     <div class="neos-contentcollection">
                         <Neos.Fusion:Loop items={props.assets} >
                             <div class={'gallery-slider-item'} >
-                                <NeosRulez.Bootstrap:Component.ImageTag image={item} width="300" height="300" allowCropping={props.allowCropping} allowUpScaling={true} async="true" />
+                                <NeosRulez.Bootstrap:Component.ImageTag image={item} width="850" height="850" allowCropping={props.allowCropping} allowUpScaling={true} async="true" />
                             </div>
                         </Neos.Fusion:Loop>
                     </div>

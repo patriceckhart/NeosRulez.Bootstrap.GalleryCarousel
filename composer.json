@@ -3,9 +3,8 @@
   "type": "neos-package",
   "name": "neosrulez/bootstrap-gallerycarousel",
   "require": {
-    "neosrulez/bootstrap": "^5.0",
-    "neosrulez/slickcarousel": "^3.0",
-    "neos/nodetypes": "*"
+    "neosrulez/bootstrap": "^5.0 || ^6.0",
+    "neosrulez/slickcarousel": "^3.0"
   },
   "autoload": {
     "psr-4": {
